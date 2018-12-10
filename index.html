@@ -1,1 +1,134 @@
-Hello World
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Casamento Sônia e Felipe</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<style>
+		#mapa{
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="divided">
+
+		<!-- One -->
+		<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+			<div class="content">
+				<h1>Sônia &amp; Felipe</h1>
+				<p class="major">Contamos com você e sua família em nosso casamento.</p>
+				<ul class="actions vertical">
+					<li>
+						<a href="#first" class="button big wide smooth-scroll-middle">Ver data e hora</a>
+					</li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="./images/banner_a.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Two -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+			<div class="content">
+				<h2>Dia 19 de janeiro de 2019, às 11h</h2>
+				<p><a id="mapa" href="https://goo.gl/maps/YGWdRPKkQqt" target="_blank" rel="noopener">
+					Rua Madre Teresa de Calcutá, 534 – Parque das Garças (Chácara Nicebel, após nº 776). <br />Clique aqui para ver o mapa.</a>
+					<br /> <hr>Use o botão abaixo para confirmar presença.</p>
+				<ul class="actions vertical">
+					<li>
+						<a href="https://api.whatsapp.com/send?phone=5512997951066&text=Estou%20confirmando%20presença%20no%20casamento%20para%20X%20pessoas"
+						 id="whats" class="button">Confirmar via WhatsApp</a>
+					</li>
+					<iframe src="./media/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+					<li class="hideaudio">
+						<audio autoplay preload="auto" id="mainTheme" loop>
+							<source src="./media/ragnarok.ogg" type="audio/ogg">
+							<source src="./media/ragnarok.mp3" type="audio/mpeg"> Seu navegador não suporta áudio em mp3 ou ogg.
+						</audio>
+					</li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="./images/spotlight01_a.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Three -->
+		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<h2>Quer saber mais sobre o presente?</h2>
+				<p>Como muitos sabem, a Sônia e o Felipe já têm a casa montada.
+					<br /> Por isso, há a opção para dar os presentes em dinheiro e ajudá-los a custear a cerimônia e a lua-de-mel.
+					<ul class="actions vertical">
+						<li>
+							<a href="./lua/index.html" id="presente" class="button">Presente</a>
+						</li>
+					</ul>
+			</div>
+			<div class="image">
+				<img src="./images/spotlight02_a.jpg" alt="" />
+			</div>
+		</section>
+
+		<!-- Four -->
+		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+			<div class="content">
+				<p>
+					<quote>
+						<h4>“E, sobre tudo isto, revesti-vos de amor, que é o vínculo da perfeição.”<br />
+							Colossenses 3:14</h4>
+
+					</quote>
+				</p>
+			</div>
+			<div class="image">
+				<img src="./images/spotlight04_a.jpg" alt="">
+			</div>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			console.log("ready :D");
+			var mainTheme = document.getElementById('mainTheme');
+			mainTheme.pause();
+			mainTheme.volume = 0.3;
+			mainTheme.play();
+		});
+
+	</script>
+
+</body>
+
+</html>
